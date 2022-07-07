@@ -64,7 +64,9 @@ ul{
     color: #212121;
 }
 
- .note, .Qualifying, .direction, .list-item, .mail { color: #757575;
+ .note, .Qualifying, .direction, .list-item, .mail { 
+     color: 
+    #757575;
 
 }
 
@@ -672,6 +674,7 @@ margin-bottom: 50px;
 .symbol-icons{
   display: flex;
   justify-content: center;
+  align-items: baseline;
 }
 .networks:not(:last-child){
     margin-right: 22px;
@@ -684,12 +687,13 @@ margin-bottom: 50px;
     width: 44px;
     height: 44px;
     border-radius: 50%;
+    color: var(--svg);
    
 }
-.social-link:hover
+/* .social-link:hover
 .social-link:focus{
 background-color: var(--accent-color);
-}
+} */
 
 .social-icon:hover{
 fill: var(--background-color);
@@ -736,6 +740,35 @@ fill: var(--background-color);
     
     /* приєднйтесь */
     .section-footer .network-link{
-        background-color: var(--primary-text-color);
+        background-color: rgba(255,255, 255, 0.6);
+        color: var(--background-color);
+      
+    }
+    .join, .social-icon{
+        fill: currentColor;
+    }
+    .footer-item{
+        display:flex;
+        align-items: baseline;
+    }
+    .footer-contact{
+        margin-right: 70px;
+    }
+    .join-networks{
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: var(--background-color);
+    }
+    .join .social-link:hover,
+    .join .social-link:focus{
+        background-color: var(--accent-color);
+    }
+
+    .social-network-list{
+        display: flex;
+        align-items: baseline;
     }
     
